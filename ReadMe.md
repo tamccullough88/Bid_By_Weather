@@ -1,9 +1,9 @@
 # Bid By Weather
 
-This project automates bid adjustments in Google Ads based on real-time weather data. It consists of two scripts:
+This project automates bid adjustments in Google Ads at the MCC (Manager Account) level based on real-time weather data. It consists of two scripts:
 
 - **`Import_Weather.js`** (Google Apps Script) — Fetches precipitation data from WeatherAPI and stores it in a Google Sheet.
-- **`Weather_Based_Bidding_Script.js`** (Google Ads Script) — Reads precipitation data from the sheet and applies bid adjustments based on weather conditions.
+- **`Weather_Based_Bidding_Script.js`** (Google Ads Script) — Reads precipitation data from the sheet and applies bid adjustments based on weather conditions across all labeled accounts in an MCC account.
 
 ## Setup Instructions
 
@@ -39,7 +39,7 @@ This project automates bid adjustments in Google Ads based on real-time weather 
 
 ### 3. How It Works
 1. The **Apps Script** fetches precipitation data and updates the Google Sheet.
-2. The **Google Ads Script** reads this data and applies bid adjustments to campaigns labeled `Weather-Based Bidding`.
+2. The **Google Ads Script** reads this data and applies bid adjustments to campaigns labeled `Weather-Based Bidding` across all MCC accounts.
 3. If precipitation is **above 0.10 inches**, bids are reduced by **25%**.
 4. If precipitation is **below 0.10 inches**, no adjustment is made.
 
@@ -47,6 +47,11 @@ This project automates bid adjustments in Google Ads based on real-time weather 
 - Ensure your Google Sheet URL is correctly set in `Weather_Based_Bidding_Script.js`.
 - Check API limits for WeatherAPI to avoid rate limiting.
 - Verify triggers in Apps Script to ensure data updates regularly.
+
+## License
+This project is open-source. Feel free to modify and adapt it to your needs.
+
+
 
 ## License
 This project is open-source. Feel free to modify and adapt it to your needs.
