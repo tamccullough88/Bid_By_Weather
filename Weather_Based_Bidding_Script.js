@@ -9,11 +9,11 @@
  */
 
 const CONFIG = {
-  SHEET_URL: "https://docs.google.com/spreadsheets/d/1HivAdkVqBxADrERi3xqjlJwGglMdl8dD2-hCfmaLiGk/edit?gid=2#gid=2",
+  SHEET_URL: "YOUR_SHEET_URL",
   SHEET_NAME: "GeoTargetMapping",
   ACCOUNT_LABEL: "Weather-Based Bidding",
   PRECIPITATION_THRESHOLD: 0.10,
-  BID_MODIFIER_IF_WET: -0.25,
+  BID_MODIFIER_IF_WET: -0.25, //Adjust As Needed
   BID_MODIFIER_IF_DRY: 0.0,
 };
 
