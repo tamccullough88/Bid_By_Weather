@@ -2,7 +2,7 @@ function getPrecipitationWithRestart() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName("WeatherData"); // Target "Sheet2"
   
-  var apiKey = "79cb43a4fe5a4a9f91c203501251003"; // Your WeatherAPI Key
+  var apiKey = "YOUR_API_KEY"; // Your WeatherAPI Key
   var baseUrl = "http://api.weatherapi.com/v1/current.json";
 
   var zipCodes = sheet.getRange("A2:A" + sheet.getLastRow()).getValues().flat(); // Read ZIP codes
