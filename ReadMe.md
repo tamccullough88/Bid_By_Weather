@@ -45,3 +45,4 @@ This project automates bid adjustments in Google Ads at the MCC (Manager Account
 ## License
 This project is open-source. Feel free to modify and adapt it to your needs.
 
+
