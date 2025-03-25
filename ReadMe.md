@@ -11,12 +11,11 @@ This project automates bid adjustments in Google Ads at the MCC (Manager Account
 
 #### Step 1: Create a Google Sheet
 1. Open [Google Sheets](https://docs.google.com/spreadsheets/).
-2. Create a new sheet and name it **Bid By Weather**.
+2. Create a new sheet by making a copy of this template: [Bid By Weather Sheet](https://docs.google.com/spreadsheets/d/1vhQ4_1IhdKygCVVvUMFGjAw8z3A1mSJRv9_HToAuVmw/copy).
 3. Add the following column headers in row 1:
    - `ZIP Code` (Column A)
    - `Geo Target Code` (Column B)
    - `Precipitation` (Column C)
-   - `Bid Adjustments` (Column D)
 
 #### Step 2: Add Google Apps Script
 1. In your Google Sheet, go to **Extensions > Apps Script**.
@@ -47,11 +46,6 @@ This project automates bid adjustments in Google Ads at the MCC (Manager Account
 - Ensure your Google Sheet URL is correctly set in `Weather_Based_Bidding_Script.js`.
 - Check API limits for WeatherAPI to avoid rate limiting.
 - Verify triggers in Apps Script to ensure data updates regularly.
-
-## License
-This project is open-source. Feel free to modify and adapt it to your needs.
-
-
 
 ## License
 This project is open-source. Feel free to modify and adapt it to your needs.
